@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@midgray : #707070;
+@transparentgray : RGBA(84,84,84,0.14);
+@transparentgrayhover : RGBA(84,84,84,0.20);
+@khwa : RGBA(0,0,0,0);
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerbar{
+    background-color: @transparentgray;
+    padding: 10px;
+}
+.horizontallist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: @midgray;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+    }
+    a:hover{
+        color: black;
+    }
+}
+.brandlistmenu{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 800px;
+    .brandbox{
+        display: inline-flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 5px;
+        background-color: @transparentgray;
+        width: 40px;
+        height: 40px;
+        img{
+            max-width:30px;
+            height:autopx;
+        }
+    }
+    .brandbox:hover{
+        background-color: @transparentgrayhover;
+    }
+}
+.searchbar{
+    width: 800px;
+    height: 50px;
+    background: @transparentgray;
+    .searchinpt{
+        width: 735px;
+        height: 50px;
+        padding-left: 10px;
+        background-color: @khwa;
+        border: solid 0px;
+        font-size: 20px;
+    }
+    .searchbtn{
+        width: 50px;
+        height: 50px;
+        background-color: @transparentgray;
+        border: solid 0px;
+    }
+    .searchbtn:hover{
+        background-color: @transparentgrayhover;
+    }
+}
+.aboutus{
+    width: 800px;
+    margin: 50px auto;
+    p{
+        margin-top: 20px;
+        font-size: 19px;
+    }
+}
+.container{
+    width: 800px;
+    margin: 0px auto;
+}
+.footerbar{
+    background-color: @transparentgray;
+    padding: 20px;
+    bottom: 0px;
+}
+.footer{
+    display: flex;
+    div{
+        width: 400px;
+    }
+}
+.footerlist{
+    text-align: right;
+    a{
+        text-decoration: none;
+        color: @midgray;
+    }
+    a:hover{
+        color: black;
+    }
+}
+.carbox{
+    width: 260px;
+    background-color: @transparentgray;
+    margin-bottom: 10px;
+    img{
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+        transition: 0.5s all ease-in-out; 
+    }
+    div.desc{
+        padding: 10px;
+    }
+}
+.carbox:hover{
+    background-color: @transparentgrayhover;
+    img{
+        transform: scale(1.1);
+    }
+}
+.carlist{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
