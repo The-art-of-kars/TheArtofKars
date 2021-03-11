@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@bgcolor: #212121;
-@textcolor: white;
+@bgcolor: white;
+@textcolor: black;
 @textlight: #484848;
 
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
@@ -19,21 +19,12 @@ body{
 .navbar{
     display: flex;
     justify-content: center;
-    padding: 20px;
-    .item{
-        text-decoration: none;
-        color: @textcolor;
-        padding: 10px;
-        margin: 0px 20px;
-    }
-    .item:hover{
-        font-weight: bold;
-        background-color: rgba(224,224,224,0.1);
-        border-radius: 10px;
-    }
-    .logo{
-        margin: 0px 30px;
-    }
+    padding: 15px;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    backdrop-filter: blur(20px);
+    background: rgba(196, 196, 196, 0.47);
 }
 
 .container{
@@ -45,8 +36,20 @@ body{
     margin: 0px auto;
 }
 
+.footer{
+    width: calc(100vw - 100px);
+    position: fixed;
+    bottom: 0px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 13px;
+    }
+}
+
 .underconst{
-    width: 500px;
+    width: 600px;
     align-self: center;
 }
 
@@ -54,7 +57,10 @@ body{
     .container{
         width: 100%;
     }
-
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
     .underconst{
        width: 80%;
     }
